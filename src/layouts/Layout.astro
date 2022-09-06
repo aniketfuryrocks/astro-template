@@ -11,25 +11,22 @@
     </head>
     <body>
         <slot />
+        <style lang="scss" is:global>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            body {
+                position: relative;
+            }
+        </style>
     </body>
 </html>
-
-<style lang="scss" is:global>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    html {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    body {
-        position: relative;
-    }
-
-</style>
-
